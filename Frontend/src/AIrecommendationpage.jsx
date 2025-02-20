@@ -41,6 +41,7 @@ const AIrecommendationpage = () => {
   }
 
   return (
+    <div className="body-of-page">
     <div className="recommendation-container">
       <h2>Hybrid Work Location Recommendation</h2>
       
@@ -83,6 +84,7 @@ const AIrecommendationpage = () => {
           <p><strong>AI Suggestion:</strong> {responseData.recommendation}</p>
         </div>
       )}
+    </div>
     </div>
   )
 }

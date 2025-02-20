@@ -4,11 +4,17 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+}
+.body{
+  display: flex;
+  height: 100vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   background: rgba(255, 255, 255, 0.2);
@@ -18,18 +24,21 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   animation: fadeIn 0.8s ease-in-out;
 }
+
 h1 {
   font-size: 24px;
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  animation: slideDown 1s ease-in-out;
+  animation: slideDown 0.2s ease-in-out;
 }
+
 .google-button {
   background: #4285F4;
   color: #fff;
@@ -47,6 +56,7 @@ h1 {
   background: #357ae8;
   transform: scale(1.05);
 }
+
 .event-form {
   margin-top: 20px;
 }
@@ -71,11 +81,13 @@ input, textarea {
   background: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease-in-out;
 }
+
 input:focus, textarea:focus {
   outline: none;
   background: #fff;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
+
 .submit-button {
   background: #34D399;
   color: white;
@@ -93,30 +105,32 @@ input:focus, textarea:focus {
   background: #10B981;
   transform: scale(1.05);
 }
+
 .Toastify__toast {
   font-weight: bold;
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate(-50%, -55%) scale(0.95);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @media (max-width: 480px) {
   .container {
     width: 90%;
