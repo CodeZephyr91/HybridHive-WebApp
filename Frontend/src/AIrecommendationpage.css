@@ -1,0 +1,30 @@
+.recommendation-container {
+    max-width: 60vw;
+    height:100vh;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .recommendation-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .recommendation-container input,
+  .recommendation-container button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .recommendation-result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 8px;
+  }
+  

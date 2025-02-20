@@ -10,7 +10,7 @@ const app=express()
 app.use(cors({origin:process.env.frontenduri, credentials: true}))
 app.use(cookieParser())
 app.use(express.json())
-const port=process.env.port||5000
+const port=5000
 const oauth2client=new google.auth.OAuth2(
     process.env.google_client_id,
     process.env.google_client_secret,
@@ -23,7 +23,14 @@ app.get("/auth/google",(req,res)=>{
             scope:["https://www.googleapis.com/auth/calendar"]
         }
     )
+    try{
+    console.log("Google Auth URL:", authurl); 
     res.redirect(authurl)
+    }
+    catch(error){
+      console.error("Failed to connect",error)
+      res.status(500).send('Authentication failed');
+    }
 })
 app.get("/auth/callback", async(req,res)=>{
     try{
