@@ -52,19 +52,19 @@ cd HybridHive-Webapp
 
 ### **2. Setup Backend (Flask API & Express.js Server)**  
 ```bash
-cd backend
+cd Backend/pythonflaskbackend
 pip install -r requirements.txt
-python app.py
+python ai_generate.py
 ```
 ```bash
-cd server
+cd Backend
 npm install
 node index.js
 ```
 
 ### **3. Setup Frontend (React)**  
 ```bash
-cd frontend
+cd Frontend
 npm install
 npm start
 ```
