@@ -1,43 +1,99 @@
-# HybridHive- Smart Hybrid Work and Mobility Planner
+# HybridHive 🐝  
+**A Smarter Way to Plan & Work Efficiently**  
 
-## About
+## 🚀 Overview  
+HybridHive is an AI-powered productivity app designed to optimize your work-life balance. It helps users efficiently plan their workdays by:  
+1. **Scheduling Meetings** 📅 – Seamlessly schedule and manage meetings with Google Calendar integration.  
+2. **AI-Based Work Recommendations** 🤖 – Get personalized recommendations on whether to work from home or travel, based on real-time **weather, traffic, and meeting locations**.  
+3. **Finding Nearby Coworking Spaces** 🏢 – Discover coworking spaces near your meeting locations for a productive work environment.  
 
-HybridHive is a web app designed to optimize the experience of hybrid workers by seamlessly integrating work location planning with urban mobility insights. The app helps hybrid teams schedule workspaces (home, office, or co-working spaces) based on commute data, team collaboration needs, and well-being suggestions. HybridHive aims to improve work-life balance, reduce burnout, and streamline the hybrid work experience.
+Additionally, HybridHive promotes **burnout prevention** by featuring **work-life philosophies** such as **Ikigai, Pomodoro, Kanban, and more** on the About page.
 
-## Feautures
+---
 
-### 1.Smart Work Location Planner
-Employs the use of AI based recommendation system to plan the best possible location for work taking into account various parameters:
-* Real Time Traffic and Transit Data
-* Team Collaboration and Scheduled Meeting
-* Personal worklife habits and Productivity pattern
+## 🛠️ Tech Stack  
 
-### 2.Team Collaboration planner and Meet Scheduler
-* Syncs with Google/Microsoft Calender for efficient scheduling of dates.
-* Suggests office days when teammates are in the same location
-* Sends notifications when teammates are in a nearby co-working space
+### **Frontend**  
+- React.js ⚛️  
+- CSS 🎨  
 
-### 3.Optimizing Mobility
-* Provides real-time traffic and weather data for smart travel plans.
-* Recommends best possible commute choices
+### **Backend**  
+- Python Flask API 🐍  
+- Express.js (Node.js) 🌿  
 
-### 4.Burnout Prevention and Well Being Insights
-* Suggest breaks, outdoor spaces, social interactions to promote wellness
-* Personalized recommendations based on workhabits
+### **APIs Used**  
+- **Google Calendar API** – For scheduling meetings  
+- **Google OAuth** – For authentication  
+- **Groq API** – To access DeepSeek LLaMA for AI-based recommendations  
+- **Open-Meteo API** – For real-time weather updates  
 
-### 5.Rewards and Gamification
-* Team challenges and leaderboards to suggest healthy work and travel habits
-* Points for sustainable commuting redeemable for some features.
+---
 
-## TechStack
-* FrontEnd: React(Next.js)+CSS for responsive UI
-* Backend: Node.js(Express) 
-* DataBase: MongoDB
-* APIs:
-    * Google Maps API for real-time traffic and transport data
-    * Calender API(Google/Microsoft) for scheduling
-    * OpenWeather API for weather based communication
+## 💂‍♂️ Project Structure  
 
+HybridHive/
+│── frontend/              # React frontend
+│── backend/
+│   │── server/            # Express.js API for handling Google Calendar
+│   │── pythonflaskbackend/ # Flask AI recommendation system
+│       │── ai_generate.py  # AI recommendation logic
+│       │── .env            # Environment variables
+│── README.md              # Project documentation
 
+---
 
+## 🔧 Installation & Setup  
+
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/CodeZephyr91/HybridHive-WebApp.git
+cd HybridHive-Webapp
+```
+
+### **2. Setup Backend (Flask API & Express.js Server)**  
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+```bash
+cd server
+npm install
+node index.js
+```
+
+### **3. Setup Frontend (React)**  
+```bash
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🚀 Features & Functionality  
+
+✅ **Meeting Scheduling** – Connects with **Google Calendar** to book meetings effortlessly.  
+✅ **AI-Based Work Suggestions** – Uses **DeepSeek LLaMA** to analyze real-time **traffic, weather, and meeting details** to recommend whether to work remotely or commute.  
+✅ **Coworking Space Finder** – Fetches **nearby coworking spaces** to enhance productivity.  
+✅ **Burnout Prevention Strategies** – Showcases **work-life balance techniques** like **Ikigai, Pomodoro, Kanban**, and more on the About page.  
+
+---
+
+## 🎯 Future Enhancements  
+🔹 **More AI-based insights** for better work location recommendations.  
+🔹 **Integration with public transport APIs** for commute suggestions.  
+🔹 **Enhanced UI/UX improvements** for a smoother user experience.  
+
+---
+
+## 🤝 Contributing  
+We welcome contributions! Feel free to submit issues and pull requests to help improve HybridHive.  
+
+---
+
+## 🐝 License  
+MIT License © 2025 HybridHive  
+
+---
 
