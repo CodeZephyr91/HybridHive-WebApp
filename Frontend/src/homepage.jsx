@@ -24,16 +24,13 @@ const Homepage = () => {
       <header className='Navbar'>
         <nav className='Navlinks'>
           <button className='button'>
-          <Link to="/recommendations" className='links'>Get Recommendations</Link>
+          <Link to="/recommendations" className='links'>AI Based Recommendations</Link>
           </button>
           <button className='button'>
           <Link to="/schedule" className='links'>Schedule Meetings</Link>
           </button>
           <button className='button'>
             <Link to="/about" className='links'>About</Link>
-          </button>
-          <button className='button'>
-            <Link to="/thoughtspace" className='links'>Thought Space</Link>
           </button>
         </nav>
       </header>

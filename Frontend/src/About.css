@@ -19,11 +19,21 @@
     width: 15%;
     background: rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     transition: all 0.3s ease-in-out;
-}
 
+}
+.ikigai-link{
+    color: aliceblue;
+    font-weight: bold;
+    background-color:  rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.ikigai-link:hover{
+    color:rgba(0, 214, 252, 0.825);
+}
 .links-to-techniques:hover {
     background: rgba(0, 0, 0, 0.4);
 }

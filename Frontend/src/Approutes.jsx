@@ -4,7 +4,11 @@ import Homepage from './homepage'
 import Schedule from './Schedule'
 import AIrecommendationpage from './AIrecommendationpage'
 import About from './About'
-import ThoughtSpace from './ThoughtSpace'
+import Ikigai from './Ikigai'
+import Kaizen from './Kaizen'
+import Kanban from './Kanban'
+import Shokunin from './Shokunin'
+import Pomodro from './Pomodro'
 const Approutes = () => {
   return (
     <div>
@@ -13,7 +17,11 @@ const Approutes = () => {
         <Route path="/recommendations" element={<AIrecommendationpage/>}/>
         <Route path="/schedule" element={<Schedule/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/thoughtspace" element={<ThoughtSpace/>}/>
+        <Route path="/about/ikigai" element={<Ikigai/>}/>
+        <Route path="/about/kaizen" element={<Kaizen/>}/>
+        <Route path="/about/kanban" element={<Kanban/>}/>
+        <Route path="/about/shokunin" element={<Shokunin/>}/>
+        <Route path="/about/pomodro" element={<Pomodro/>}/>
       </Routes>
     </div>
   )

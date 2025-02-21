@@ -1,0 +1,59 @@
+.Shokunin-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease-in-out;
+}
+
+.data-shokunin {
+    width: 60%;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.shokunin-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shokunin-image {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.8s ease-in-out, 
+                box-shadow 0.8s ease-in-out, 
+                filter 0.8s ease-in-out;
+}
+
+.shokunin-image:hover {
+    transform: scale(1.08);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.1);
+}
+@media screen and (max-width: 768px) {
+    .Shokunin-parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .data-shokunin {
+        width: 100%;
+        text-align: center;
+    }
+
+    .shokunin-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}

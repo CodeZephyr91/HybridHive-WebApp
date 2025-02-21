@@ -1,10 +1,15 @@
 import React from 'react'
 import './About.css'
+import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div className="parent">
       <div className='links-to-techniques'>
-          
+          <Link to="/about/ikigai" className='ikigai-link'>Ikigai</Link>
+          <Link to="/about/kaizen" className='ikigai-link'>Kaizen</Link>
+          <Link to="/about/kanban" className='ikigai-link'>Kanban</Link>
+          <Link to="/about/shokunin" className='ikigai-link'>Shokunin</Link>
+          <Link to="/about/pomodro" className='ikigai-link'>Pomodoro</Link>
       </div>
       <div className='written-text'>
         <div className="major-data">
