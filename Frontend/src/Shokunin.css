@@ -57,3 +57,49 @@
         margin-top: 20px;
     }
 }
+@media screen and (max-width: 1024px) {
+    .Shokunin-parent {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .data-shokunin {
+        width: 90%;
+    }
+
+    .shokunin-image {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .shokunin-heading {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Shokunin-parent {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .data-shokunin {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 15px;
+    }
+
+    .shokunin-heading {
+        font-size: 22px;
+    }
+
+    .shokunin-image {
+        width: 90%;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+}

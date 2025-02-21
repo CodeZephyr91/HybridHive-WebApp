@@ -131,3 +131,45 @@
         max-width: 90%;
     }
 }
+@media (max-width: 480px) {
+    .Pomodro-parent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8%;
+        gap: 15px;
+    }
+
+    .data-pomodro {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .pomodro-image {
+        max-width: 90%;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+
+    .pomodro-heading h1 {
+        font-size: 2rem;
+    }
+
+    .pomodro-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .data-pomodro p, 
+    .data-pomodro ul li {
+        font-size: 1rem;
+    }
+
+    .data-pomodro ul {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .data-pomodro ul li::before {
+        margin-right: 8px;
+    }
+}

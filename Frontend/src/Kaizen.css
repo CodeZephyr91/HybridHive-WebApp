@@ -70,3 +70,48 @@
         margin-top: 20px;
     }
 }
+@media (max-width: 768px) {
+    .Kaizen-parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .data-kaizen {
+        max-width: 90%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .kaizen-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .kaizen-heading h1 {
+        font-size: 2rem;
+    }
+
+    .kaizen-heading h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-kaizen {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .kaizen-image {
+        max-width: 95%;
+    }
+
+    .kaizen-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .kaizen-heading h2 {
+        font-size: 1.3rem;
+    }
+}

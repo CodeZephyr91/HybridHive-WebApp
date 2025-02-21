@@ -70,3 +70,47 @@
         margin-top: 20px;
     }
 }
+@media (max-width: 1024px) {
+    .Kanban-parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+    }
+
+    .data-kanban {
+        max-width: 85%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .kanban-image {
+        max-width: 70%;
+        margin-top: 15px;
+    }
+
+    .kanban-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .kanban-heading h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 480px) {
+    .data-kanban {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .kanban-image {
+        max-width: 95%;
+    }
+
+    .kanban-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .kanban-heading h2 {
+        font-size: 1.3rem;
+    }
+}

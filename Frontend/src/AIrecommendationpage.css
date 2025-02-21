@@ -70,3 +70,58 @@
   background: #86b5e4e2;
   border-radius: 8px;
 }
+@media (max-width: 1024px) {
+  .recommendation-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .recommendation-container input,
+  .recommendation-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-of-page {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .recommendation-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .recommendation-container input,
+  .recommendation-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .recommendation-result {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendation-container {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .recommendation-container input,
+  .recommendation-container button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .recommendation-result {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+

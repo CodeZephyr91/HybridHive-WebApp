@@ -83,3 +83,78 @@ p {
 .major-data, .solution, .conclusion {
     animation: fadeIn 1s ease-in-out;
 }
+@media (max-width: 1024px) {
+    .parent {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links-to-techniques {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .ikigai-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .written-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .links-to-techniques {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .ikigai-link {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .written-text {
+        padding: 15px;
+    }
+
+    .major-data, .solution, .conclusion {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-to-techniques {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ikigai-link {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .written-text {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
