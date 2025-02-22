@@ -1,13 +1,14 @@
 .body-of-page {
   background: rgb(124, 237, 225);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -21,16 +22,21 @@
 
 .recommendation-container {
   width: 70%;
-  max-height: 100vh;
-  max-width: 85vw;
+  max-height: 80vh;
+  max-width: 80vh;
+  overflow: auto;
   margin: 20px auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #f9f9f9;
   text-align: center;
   animation: fadeIn 1s ease-in-out forwards;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
 }
 .recommendation-container form {
   display: flex;
@@ -70,17 +76,17 @@
   padding: 12px;
   background: #86b5e4e2;
   border-radius: 8px;
+  overflow:auto;
+  max-width: 100%;
+  text-align: left;
+  white-space: pre-wrap; 
 }
+
 @media (max-width: 1024px) {
   .recommendation-container {
     width: 80%;
     padding: 15px;
-  }
-
-  .recommendation-container input,
-  .recommendation-container button {
-    font-size: 14px;
-    padding: 10px;
+    max-height: 85vh;
   }
 }
 
@@ -94,17 +100,7 @@
   .recommendation-container {
     width: 90%;
     padding: 15px;
-  }
-
-  .recommendation-container input,
-  .recommendation-container button {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .recommendation-result {
-    font-size: 14px;
-    padding: 10px;
+    max-height: 90vh; 
   }
 }
 
@@ -112,6 +108,7 @@
   .recommendation-container {
     width: 95%;
     padding: 12px;
+    max-height: 95vh;
   }
 
   .recommendation-container input,
@@ -125,4 +122,5 @@
     padding: 8px;
   }
 }
+
 

@@ -58,7 +58,7 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center footer text */
+    justify-content: center;
     text-align: center;
 }
 .parafooter{
@@ -84,13 +84,19 @@
     text-align: center;
     margin-bottom: 20px;
 }
+.typing-container {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
 .typing-text {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: black;
     font-weight: bold;
-    display: inline;
-    position: relative;
+    display: inline-block;
+    white-space: nowrap; 
 }
 .typed-cursor {
     display: none;

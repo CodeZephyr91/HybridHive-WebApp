@@ -21,13 +21,13 @@ const Schedule = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/auth/google"
+    window.location.href = "https://hybridhive-express-backend.onrender.com/auth/google"
   };
 
   const handleSubmission = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/create-event", event, {
+      const response = await axios.post("https://hybridhive-express-backend.onrender.com/create-event", event, {
         withCredentials: true,
       });
       toast.success("🎉 Event Created Successfully!", {
