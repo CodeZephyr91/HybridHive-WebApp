@@ -46,7 +46,7 @@ const AIrecommendationpage = () => {
       <h2>Hybrid Work Location Recommendation</h2>
       
       <form onSubmit={handleSubmit}>
-        <label>Meeting Location (if any):</label>
+        <label>Meeting Location (optional):</label>
         <input
           type="text"
           value={meetingLocation}
@@ -61,7 +61,7 @@ const AIrecommendationpage = () => {
           onChange={(e) => setMeetingTime(e.target.value)}
         />
 
-        <label>Current Location (if no meeting):</label>
+        <label>Current Location:</label>
         <input
           type="text"
           value={currentLocation}
