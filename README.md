@@ -57,7 +57,7 @@ HybridHive/
 ### **1. Clone the Repository**  
 ```bash
 git clone https://github.com/CodeZephyr91/HybridHive-WebApp.git
-cd HybridHive-Webapp
+cd HybridHive-WebApp
 ```
 
 ### **2. Setup Backend (Flask API & Express.js Server)**  
