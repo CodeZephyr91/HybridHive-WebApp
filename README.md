@@ -1,56 +1,73 @@
-# HybridHive 🐝  
-**A Smarter Way to Plan & Work Efficiently**  
+# 🐝 HybridHive – Smart Work Planning & Productivity 🚀  
 
-## 🚀 Overview  
-HybridHive is an AI-powered productivity app designed to optimize your work-life balance. It helps users efficiently plan their workdays by:  
-1. **Scheduling Meetings** 📅 – Seamlessly schedule and manage meetings with Google Calendar integration.  
-2. **AI-Based Work Recommendations** 🤖 – Get personalized recommendations on whether to work from home or travel, based on real-time **weather, traffic, and meeting locations**.  
-3. **Finding Nearby Coworking Spaces** 🏢 – Discover coworking spaces near your meeting locations for a productive work environment.  
+## 🌍 **Live Now! Try HybridHive:**  
+🔗 **Frontend:** [HybridHive WebApp](https://hybrid-hive-webapp-frontend.vercel.app/)  
+🔗 **Flask Backend:** [AI Recommendation System](https://hybridhive-flask-backend-5.onrender.com)  
+🔗 **Google API Backend (Express.js):** [Google Calendar & OAuth](https://hybridhive-express-backend.onrender.com)  
 
-Additionally, HybridHive promotes **burnout prevention** by featuring **work-life philosophies** such as **Ikigai, Pomodoro, Kanban, and more** on the About page.
+> **Note:** Google Calendar scheduling is **temporarily unavailable** due to Google's OAuth verification policy. We are working on getting it approved! 🛠️
 
 ---
 
-## 🛠️ Tech Stack  
+## 🎯 **What is HybridHive?**  
+HybridHive is an **AI-powered work planning app** that helps you manage your workday **smarter** by:  
+✅ **Scheduling Meetings** 📅 *(Temporarily Unavailable – Awaiting Google OAuth Approval)*  
+✅ **AI-Based Work Recommendations** 🤖 *(Work from home or commute? Get real-time weather & traffic-based insights!)*  
+✅ **Finding Nearby Coworking Spaces** 🏢 *(Locate the best spots for a productive work environment!)*  
+✅ **Burnout Prevention Strategies** ⚖️ *(Explore work-life philosophies like Ikigai, Kanban & more!)*  
 
-### **Frontend**  
+---
+
+## 🛠 **Tech Stack**  
+
+### **Frontend** 🎨  
 - React.js ⚛️  
-- CSS 🎨  
+- CSS 💅  
 
-### **Backend**  
-- Python Flask API 🐍  
+### **Backend** 🔥  
+- Flask API (Python) 🐍  
 - Express.js (Node.js) 🌿  
 
 ### **APIs Used**  
-- **Google Calendar API** – For scheduling meetings  
-- **Google OAuth** – For authentication  
-- **Groq API** – To access DeepSeek LLaMA for AI-based recommendations  
-- **Open-Meteo API** – For real-time weather updates  
+- **Google Calendar API** *(Temporarily Unavailable – OAuth verification pending)*  
+- **Google OAuth** *(For authentication – undergoing verification)*  
+- **Groq API** *(DeepSeek LLaMA for AI-based recommendations)*  
+- **Open-Meteo API** *(For real-time weather updates)*  
 
 ---
 
-## 💂‍♂️ Project Structure  
+## 🚀 **How It Works**  
+1️⃣ **Enter your work & meeting details** 📝  
+2️⃣ **AI analyzes real-time weather & traffic** ☀️🚦  
+3️⃣ **Get a recommendation** – Work from home or go to a coworking space? 🤔  
+4️⃣ **Find the best coworking spaces nearby** 🏢  
+5️⃣ **Boost productivity & maintain work-life balance** ⚡  
 
+---
+
+## 📂 **Project Structure**  
+```
 HybridHive/
 │── frontend/              # React frontend
 │── backend/
-│   │── server/            # Express.js API for handling Google Calendar
+│   │── server/            # Express.js API for Google Calendar
 │   │── pythonflaskbackend/ # Flask AI recommendation system
-│       │── ai_generate.py  # AI recommendation logic
+│       │── ai_generate.py  # AI logic
 │       │── .env            # Environment variables
 │── README.md              # Project documentation
+```
 
 ---
 
-## 🔧 Installation & Setup  
+## 🔧 **Installation & Setup**  
 
-### **1. Clone the Repository**  
+### **1️⃣ Clone the Repository**  
 ```bash
 git clone https://github.com/CodeZephyr91/HybridHive-WebApp.git
 cd HybridHive-Webapp
 ```
 
-### **2. Setup Backend (Flask API & Express.js Server)**  
+### **2️⃣ Setup Backend (Flask API & Express.js Server)**  
 ```bash
 cd Backend/pythonflaskbackend
 pip install -r requirements.txt
@@ -62,7 +79,7 @@ npm install
 node index.js
 ```
 
-### **3. Setup Frontend (React)**  
+### **3️⃣ Setup Frontend (React)**  
 ```bash
 cd Frontend
 npm install
@@ -71,29 +88,29 @@ npm start
 
 ---
 
-## 🚀 Features & Functionality  
-
-✅ **Meeting Scheduling** – Connects with **Google Calendar** to book meetings effortlessly.  
-✅ **AI-Based Work Suggestions** – Uses **DeepSeek LLaMA** to analyze real-time **traffic, weather, and meeting details** to recommend whether to work remotely or commute.  
-✅ **Coworking Space Finder** – Fetches **nearby coworking spaces** to enhance productivity.  
-✅ **Burnout Prevention Strategies** – Showcases **work-life balance techniques** like **Ikigai, Pomodoro, Kanban**, and more on the About page.  
-
----
-
-## 🎯 Future Enhancements  
-🔹 **More AI-based insights** for better work location recommendations.  
-🔹 **Integration with public transport APIs** for commute suggestions.  
-🔹 **Enhanced UI/UX improvements** for a smoother user experience.  
+## ⚡ **Deployment Strategy**  
+🚀 **Frontend Deployed on Vercel** ([Live Here](https://hybrid-hive-webapp-frontend.vercel.app/))  
+🚀 **Flask Backend Deployed on Render** ([Live Here](https://hybridhive-flask-backend-5.onrender.com))  
+🚀 **Express.js Google API Backend Deployed on Render** ([Live Here](https://hybridhive-express-backend.onrender.com))  
+🛠️ **Flask Backend Auto-Pinged Every 15 min** *(To prevent sleep mode on Render, Google Apps Script pings the backend every 15 min! ⏳)*  
 
 ---
 
-## 🤝 Contributing  
-We welcome contributions! Feel free to submit issues and pull requests to help improve HybridHive.  
+## 🎯 **Future Enhancements**  
+🔹 **More AI-based insights** for work location recommendations.  
+🔹 **Integration with public transport APIs** for better commute planning.  
+🔹 **Enhanced UI/UX** for an even smoother user experience.  
 
 ---
 
-## 🐝 License  
+## 🤝 **Contributing**  
+We welcome contributions! 🚀 Feel free to submit issues and pull requests to improve HybridHive.  
+
+---
+
+## 🐝 **License**  
 MIT License © 2025 HybridHive  
 
 ---
 
+**📢 HybridHive: Work Smarter, Not Harder!** 🚀🐝
