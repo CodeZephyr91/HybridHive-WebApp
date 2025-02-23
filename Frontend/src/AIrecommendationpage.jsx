@@ -54,7 +54,7 @@ const AIrecommendationpage = () => {
           placeholder="Enter meeting location"
         />
 
-        <label>Meeting Time:</label>
+        <label>Meeting Time (Optional):</label>
         <input
           type="datetime-local"
           value={meetingTime}
