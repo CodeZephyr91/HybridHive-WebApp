@@ -39,14 +39,15 @@ HybridHive is **publicly deployed** and accessible online! 🎉
 ## 📂 Project Structure  
 ```
 HybridHive/
-│── frontend/              # React frontend
-│── backend/
+│── Frontend/              # React frontend
+│── Backend/
 │   │── index.js           # Express.js API for Google Calendar
 │   │── pythonflaskbackend/ # Flask AI recommendation system
 │       │── app.py         # AI recommendation logic
 │       │── requirements.txt # Python dependencies
 │       │── runtime.txt    # Runtime configuration
 │── README.md              # Project documentation
+|── .gitignore #For secure .env addition
 ```
 
 ---
@@ -61,19 +62,19 @@ cd HybridHive-Webapp
 
 ### **2. Setup Backend (Flask API & Express.js Server)**  
 ```bash
-cd backend/pythonflaskbackend
+cd Backend/pythonflaskbackend
 pip install -r requirements.txt
 python app.py
 ```
 ```bash
-cd backend
+cd Backend
 npm install
 node index.js
 ```
 
 ### **3. Setup Frontend (React)**  
 ```bash
-cd frontend
+cd Frontend
 npm install
 npm start
 ```
